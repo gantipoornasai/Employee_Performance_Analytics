@@ -1,0 +1,79 @@
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                    EXECUTIVE SUMMARY — PEOPLE ANALYTICS REPORT                                             ║
+║                                            Monthly Performance Cycle                                                       ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+PREPARED BY   : People Analytics Team
+DATASET       : 2,600 employees across 8 departments
+MODEL         : XGBoost Classifier (AUC = 1.0)
+REPORT DATE   : Auto-generated monthly
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. PERFORMANCE OVERVIEW
+━━━━━━━━━━━━━━━━━━━━━━━━
+Average performance rating  : 2.99 / 5.0
+High performers (≥ 4.0)     : 541 employees (20.8%)
+Performance concern (≤ 2.0) : 574 employees (22.1%)
+Average OKR completion      : 70.7%
+Average engagement score    : 54.0 / 100
+
+2. KEY INSIGHTS FROM ML MODEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+The XGBoost model predicts high performer status with
+AUC = 1.0, meaning it correctly ranks a true high
+performer above a standard performer 100.0% of the time.
+
+TOP 5 PERFORMANCE DRIVERS (from feature importance):
+  1. EngagementPerfAlignment
+  2. Overall360Score
+  3. HistoricalRatingAvg
+  4. HighPotentialFlag
+  5. EngagementScore
+
+HIGH PERFORMER PROFILE (vs standard performers):
+  • OKR completion significantly higher (+15-20%)
+  • Engagement score notably higher (+20-25%)
+  • Overall 360 score consistently higher
+  • Absenteeism significantly lower
+  • Training hours higher (L&D investment pays off)
+
+3. PROMOTION RECOMMENDATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Total promotion candidates identified : 233
+(HP Probability ≥ 0.70 AND Readiness ≥ 0.60)
+
+Top department by candidates:
+Sales — 37 candidates
+
+Recommended action: Initiate promotion business cases for all 233 candidates before next review cycle closes.
+
+4. RISK FLAGS REQUIRING IMMEDIATE ACTION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PIP Risk employees          : 393 (30-day PIP plan)
+Flight Risk employees        : 28 (2-week stay interview)
+Burnout Critical employees   : 10 (immediate workload review)
+Promotion Lag employees      : 142 (30-day career conversation)
+
+Total requiring HR action    : 572 employees
+
+5. AUTOMATION IMPACT
+━━━━━━━━━━━━━━━━━━━━━
+This report was generated automatically.
+Estimated manual reporting time replaced : 8-12 hours/month
+Time taken by automated pipeline         : ~3 minutes
+Annual time saved (per analyst)          : ~120 hours
+
+6. ETHICS & GOVERNANCE
+━━━━━━━━━━━━━━━━━━━━━━━
+Gender rating gap             : < 0.05 points (acceptable)
+Model bias audit              : Passed — no protected attributes
+                                 in top 10 feature importances
+Calibration adjustment rate   : 18% (within normal range)
+
+DISCLAIMER: All predictions are model-assisted. Final talent decisions require human review and manager input. 
+This system is a decision-support tool, not a decision-making tool.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+END OF REPORT
