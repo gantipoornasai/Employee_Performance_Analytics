@@ -1,0 +1,15 @@
+{
+  "report_month": "2024-11",
+  "generated_at": "2026-03-22T12:06:05.780866",
+  "total_employees": 2600,
+  "avg_performance_rating": 2.992,
+  "pct_high_performers": 17.8,
+  "pct_low_performers": 18.3,
+  "avg_okr_completion": 70.684,
+  "avg_engagement_score": 53.893,
+  "predicted_high_performers": 542,
+  "flight_risk_count": 24,
+  "pip_risk_count": 928,
+  "promotion_ready_count": 367,
+  "promotion_lag_count": 142
+}
