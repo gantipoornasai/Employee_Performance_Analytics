@@ -1,0 +1,17 @@
+{
+  "model_type": "XGBoostClassifier",
+  "target": "HighPerformer (Rating >= 4.0)",
+  "threshold": 0.45,
+  "n_features": 41,
+  "train_size": 2080,
+  "test_auc": 1.0,
+  "test_f1_business": 0.9954,
+  "imbalance_ratio": 3.8,
+  "top_5_features": [
+    "EngagementPerfAlignment",
+    "Overall360Score",
+    "HistoricalRatingAvg",
+    "HighPotentialFlag",
+    "EngagementScore"
+  ]
+}
