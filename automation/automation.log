@@ -1,0 +1,315 @@
+2026-03-22 11:59:03  [INFO]  ====================================================
+2026-03-22 11:59:03  [INFO]  MONTHLY AUTOMATION STARTED
+2026-03-22 11:59:03  [INFO]  Month   : 2026-03
+2026-03-22 11:59:03  [INFO]  Dry Run : False
+2026-03-22 11:59:03  [INFO]  Time    : 2026-03-22 11:59:03
+2026-03-22 11:59:03  [INFO]  ====================================================
+2026-03-22 11:59:03  [INFO]  Loading data for month: 2026-03
+2026-03-22 11:59:03  [INFO]  No snapshot found - simulating monthly update
+2026-03-22 11:59:03  [INFO]  Base data loaded: employee_features.csv
+2026-03-22 11:59:03  [INFO]  Snapshot saved: C:\Users\ganti_kvd0xe3\OneDrive\Sathya\employee_performance_analytics\data\monthly_snapshots\snapshot_2026-03.csv
+2026-03-22 11:59:03  [INFO]  Data loaded: 2,600 employees, 54 columns
+2026-03-22 11:59:03  [INFO]  Running preprocessing pipeline
+2026-03-22 12:00:32  [INFO]  Pipeline loaded successfully
+2026-03-22 12:00:32  [INFO]  Feature columns loaded: 41
+2026-03-22 12:00:32  [INFO]  Features used for prediction: 41
+2026-03-22 12:00:32  [INFO]  Preprocessing complete - shape: (2600, 53)
+2026-03-22 12:00:32  [INFO]  Generating ML predictions
+2026-03-22 12:00:52  [INFO]  Model loaded successfully
+2026-03-22 12:00:52  [INFO]  Predictions done: 542 high performers (20.8%)
+2026-03-22 12:00:52  [INFO]  Calculating monthly KPI summary
+2026-03-22 12:00:52  [INFO]  Summary metrics:
+2026-03-22 12:00:52  [INFO]     total_employees                    : 2600
+2026-03-22 12:00:52  [INFO]     avg_performance_rating             : 2.988
+2026-03-22 12:00:52  [INFO]     pct_high_performers                : 18.0
+2026-03-22 12:00:52  [INFO]     pct_low_performers                 : 18.8
+2026-03-22 12:00:52  [INFO]     avg_okr_completion                 : 70.699
+2026-03-22 12:00:52  [INFO]     avg_engagement_score               : 53.926
+2026-03-22 12:00:52  [INFO]     predicted_high_performers          : 542
+2026-03-22 12:00:52  [INFO]     flight_risk_count                  : 23
+2026-03-22 12:00:52  [INFO]     pip_risk_count                     : 936
+2026-03-22 12:00:52  [INFO]     promotion_ready_count              : 367
+2026-03-22 12:00:52  [INFO]     promotion_lag_count                : 142
+2026-03-22 12:00:52  [INFO]  Main CSV saved: C:\Users\ganti_kvd0xe3\OneDrive\Sathya\employee_performance_analytics\data\processed\employee_with_predictions.csv
+2026-03-22 12:00:53  [INFO]  Archive saved: C:\Users\ganti_kvd0xe3\OneDrive\Sathya\employee_performance_analytics\data\processed\predictions_2026-03.csv
+2026-03-22 12:00:53  [INFO]  Summary JSON saved: C:\Users\ganti_kvd0xe3\OneDrive\Sathya\employee_performance_analytics\data\processed\summary_2026-03.json
+2026-03-22 12:00:53  [INFO]  Generating monthly visual report
+2026-03-22 12:00:59  [INFO]  Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-22 12:00:59  [INFO]  Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-22 12:01:04  [INFO]  Report saved: C:\Users\ganti_kvd0xe3\OneDrive\Sathya\employee_performance_analytics\docs\monthly_report_2026-03.png
+2026-03-22 12:01:04  [INFO]  
+2026-03-22 12:01:04  [INFO]  ====================================================
+2026-03-22 12:01:04  [INFO]  MOCK EMAIL NOTIFICATION (demo mode)
+2026-03-22 12:01:04  [INFO]  Subject: [People Analytics] Monthly Report Ready - 2026-03
+2026-03-22 12:01:04  [INFO]  
+----------------------------------------------------
+PEOPLE ANALYTICS - MONTHLY AUTOMATED REPORT
+----------------------------------------------------
+
+Hi HR Leadership Team,
+
+Your monthly performance analytics report
+for 2026-03 is ready.
+
+KEY HIGHLIGHTS:
+----------------------------------------------------
+  Employees Analyzed        : 2,600
+  Avg Performance Rating    : 2.99 / 5.0
+  High Performers (>=4.0)   : 18.0%
+  Avg OKR Completion        : 70.7%
+  Avg Engagement Score      : 53.9 / 100
+  Predicted High Performers : 542
+  Promotion Ready           : 367
+
+ACTIONS REQUIRED THIS CYCLE:
+----------------------------------------------------
+  Flight Risk Employees     : 23
+  -> Stay interviews within 2 weeks
+
+  PIP Risk Employees        : 936
+  -> PIP conversations within 30 days
+
+  Promotion Lag Alerts      : 142
+  -> Career conversations within 30 days
+
+REPORT ASSETS:
+----------------------------------------------------
+  Report  : C:\Users\ganti_kvd0xe3\OneDrive\Sathya\employee_performance_analytics\docs\monthly_report_2026-03.png
+  Archive : data/processed/predictions_2026-03.csv
+  Summary : data/processed/summary_2026-03.json
+
+DISCLAIMER: All scores are model-assisted.
+Final decisions require human review.
+
+----------------------------------------------------
+People Analytics Automation System
+Generated: 2026-03-22 12:01:04
+----------------------------------------------------
+
+2026-03-22 12:01:04  [INFO]  ====================================================
+2026-03-22 12:01:04  [INFO]  
+2026-03-22 12:01:04  [INFO]  POWER BI REFRESH:
+2026-03-22 12:01:04  [INFO]    CSV updated at: data/processed/employee_with_predictions.csv
+2026-03-22 12:01:04  [INFO]    To refresh Power BI:
+2026-03-22 12:01:04  [INFO]    1. Open Power BI Desktop
+2026-03-22 12:01:04  [INFO]    2. Home tab -> Refresh
+2026-03-22 12:01:04  [INFO]    OR configure scheduled refresh
+2026-03-22 12:01:04  [INFO]    in Power BI Service (Settings -> Schedule)
+2026-03-22 12:01:04  [INFO]  
+2026-03-22 12:01:04  [INFO]  ====================================================
+2026-03-22 12:01:04  [INFO]  AUTOMATION COMPLETE
+2026-03-22 12:01:04  [INFO]    Month    : 2026-03
+2026-03-22 12:01:04  [INFO]    Duration : 120 seconds
+2026-03-22 12:01:04  [INFO]    HP Count : 542
+2026-03-22 12:01:04  [INFO]    Manual hours saved: ~10 hours
+2026-03-22 12:01:04  [INFO]  ====================================================
+2026-03-22 12:06:04  [INFO]  ====================================================
+2026-03-22 12:06:04  [INFO]  MONTHLY AUTOMATION STARTED
+2026-03-22 12:06:04  [INFO]  Month   : 2024-11
+2026-03-22 12:06:04  [INFO]  Dry Run : False
+2026-03-22 12:06:04  [INFO]  Time    : 2026-03-22 12:06:04
+2026-03-22 12:06:04  [INFO]  ====================================================
+2026-03-22 12:06:04  [INFO]  Loading data for month: 2024-11
+2026-03-22 12:06:04  [INFO]  No snapshot found - simulating monthly update
+2026-03-22 12:06:04  [INFO]  Base data loaded: employee_features.csv
+2026-03-22 12:06:04  [INFO]  Snapshot saved: C:\Users\ganti_kvd0xe3\OneDrive\Sathya\employee_performance_analytics\data\monthly_snapshots\snapshot_2024-11.csv
+2026-03-22 12:06:04  [INFO]  Data loaded: 2,600 employees, 54 columns
+2026-03-22 12:06:04  [INFO]  Running preprocessing pipeline
+2026-03-22 12:06:05  [INFO]  Pipeline loaded successfully
+2026-03-22 12:06:05  [INFO]  Feature columns loaded: 41
+2026-03-22 12:06:05  [INFO]  Features used for prediction: 41
+2026-03-22 12:06:05  [INFO]  Preprocessing complete - shape: (2600, 53)
+2026-03-22 12:06:05  [INFO]  Generating ML predictions
+2026-03-22 12:06:05  [INFO]  Model loaded successfully
+2026-03-22 12:06:05  [INFO]  Predictions done: 542 high performers (20.8%)
+2026-03-22 12:06:05  [INFO]  Calculating monthly KPI summary
+2026-03-22 12:06:05  [INFO]  Summary metrics:
+2026-03-22 12:06:05  [INFO]     total_employees                    : 2600
+2026-03-22 12:06:05  [INFO]     avg_performance_rating             : 2.992
+2026-03-22 12:06:05  [INFO]     pct_high_performers                : 17.8
+2026-03-22 12:06:05  [INFO]     pct_low_performers                 : 18.3
+2026-03-22 12:06:05  [INFO]     avg_okr_completion                 : 70.684
+2026-03-22 12:06:05  [INFO]     avg_engagement_score               : 53.893
+2026-03-22 12:06:05  [INFO]     predicted_high_performers          : 542
+2026-03-22 12:06:05  [INFO]     flight_risk_count                  : 24
+2026-03-22 12:06:05  [INFO]     pip_risk_count                     : 928
+2026-03-22 12:06:05  [INFO]     promotion_ready_count              : 367
+2026-03-22 12:06:05  [INFO]     promotion_lag_count                : 142
+2026-03-22 12:06:05  [INFO]  Main CSV saved: C:\Users\ganti_kvd0xe3\OneDrive\Sathya\employee_performance_analytics\data\processed\employee_with_predictions.csv
+2026-03-22 12:06:05  [INFO]  Archive saved: C:\Users\ganti_kvd0xe3\OneDrive\Sathya\employee_performance_analytics\data\processed\predictions_2024-11.csv
+2026-03-22 12:06:05  [INFO]  Summary JSON saved: C:\Users\ganti_kvd0xe3\OneDrive\Sathya\employee_performance_analytics\data\processed\summary_2024-11.json
+2026-03-22 12:06:05  [INFO]  Generating monthly visual report
+2026-03-22 12:06:06  [INFO]  Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-22 12:06:06  [INFO]  Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-22 12:06:08  [INFO]  Report saved: C:\Users\ganti_kvd0xe3\OneDrive\Sathya\employee_performance_analytics\docs\monthly_report_2024-11.png
+2026-03-22 12:06:08  [INFO]  
+2026-03-22 12:06:08  [INFO]  ====================================================
+2026-03-22 12:06:08  [INFO]  MOCK EMAIL NOTIFICATION (demo mode)
+2026-03-22 12:06:08  [INFO]  Subject: [People Analytics] Monthly Report Ready - 2024-11
+2026-03-22 12:06:08  [INFO]  
+----------------------------------------------------
+PEOPLE ANALYTICS - MONTHLY AUTOMATED REPORT
+----------------------------------------------------
+
+Hi HR Leadership Team,
+
+Your monthly performance analytics report
+for 2024-11 is ready.
+
+KEY HIGHLIGHTS:
+----------------------------------------------------
+  Employees Analyzed        : 2,600
+  Avg Performance Rating    : 2.99 / 5.0
+  High Performers (>=4.0)   : 17.8%
+  Avg OKR Completion        : 70.7%
+  Avg Engagement Score      : 53.9 / 100
+  Predicted High Performers : 542
+  Promotion Ready           : 367
+
+ACTIONS REQUIRED THIS CYCLE:
+----------------------------------------------------
+  Flight Risk Employees     : 24
+  -> Stay interviews within 2 weeks
+
+  PIP Risk Employees        : 928
+  -> PIP conversations within 30 days
+
+  Promotion Lag Alerts      : 142
+  -> Career conversations within 30 days
+
+REPORT ASSETS:
+----------------------------------------------------
+  Report  : C:\Users\ganti_kvd0xe3\OneDrive\Sathya\employee_performance_analytics\docs\monthly_report_2024-11.png
+  Archive : data/processed/predictions_2024-11.csv
+  Summary : data/processed/summary_2024-11.json
+
+DISCLAIMER: All scores are model-assisted.
+Final decisions require human review.
+
+----------------------------------------------------
+People Analytics Automation System
+Generated: 2026-03-22 12:06:08
+----------------------------------------------------
+
+2026-03-22 12:06:08  [INFO]  ====================================================
+2026-03-22 12:06:08  [INFO]  
+2026-03-22 12:06:08  [INFO]  POWER BI REFRESH:
+2026-03-22 12:06:08  [INFO]    CSV updated at: data/processed/employee_with_predictions.csv
+2026-03-22 12:06:08  [INFO]    To refresh Power BI:
+2026-03-22 12:06:08  [INFO]    1. Open Power BI Desktop
+2026-03-22 12:06:08  [INFO]    2. Home tab -> Refresh
+2026-03-22 12:06:08  [INFO]    OR configure scheduled refresh
+2026-03-22 12:06:08  [INFO]    in Power BI Service (Settings -> Schedule)
+2026-03-22 12:06:08  [INFO]  
+2026-03-22 12:06:08  [INFO]  ====================================================
+2026-03-22 12:06:08  [INFO]  AUTOMATION COMPLETE
+2026-03-22 12:06:08  [INFO]    Month    : 2024-11
+2026-03-22 12:06:08  [INFO]    Duration : 4 seconds
+2026-03-22 12:06:08  [INFO]    HP Count : 542
+2026-03-22 12:06:08  [INFO]    Manual hours saved: ~10 hours
+2026-03-22 12:06:08  [INFO]  ====================================================
+2026-03-22 12:06:27  [INFO]  ====================================================
+2026-03-22 12:06:27  [INFO]  MONTHLY AUTOMATION STARTED
+2026-03-22 12:06:27  [INFO]  Month   : 2024-10
+2026-03-22 12:06:27  [INFO]  Dry Run : False
+2026-03-22 12:06:27  [INFO]  Time    : 2026-03-22 12:06:27
+2026-03-22 12:06:27  [INFO]  ====================================================
+2026-03-22 12:06:27  [INFO]  Loading data for month: 2024-10
+2026-03-22 12:06:27  [INFO]  No snapshot found - simulating monthly update
+2026-03-22 12:06:27  [INFO]  Base data loaded: employee_features.csv
+2026-03-22 12:06:27  [INFO]  Snapshot saved: C:\Users\ganti_kvd0xe3\OneDrive\Sathya\employee_performance_analytics\data\monthly_snapshots\snapshot_2024-10.csv
+2026-03-22 12:06:27  [INFO]  Data loaded: 2,600 employees, 54 columns
+2026-03-22 12:06:27  [INFO]  Running preprocessing pipeline
+2026-03-22 12:06:29  [INFO]  Pipeline loaded successfully
+2026-03-22 12:06:29  [INFO]  Feature columns loaded: 41
+2026-03-22 12:06:29  [INFO]  Features used for prediction: 41
+2026-03-22 12:06:29  [INFO]  Preprocessing complete - shape: (2600, 53)
+2026-03-22 12:06:29  [INFO]  Generating ML predictions
+2026-03-22 12:06:29  [INFO]  Model loaded successfully
+2026-03-22 12:06:29  [INFO]  Predictions done: 542 high performers (20.8%)
+2026-03-22 12:06:29  [INFO]  Calculating monthly KPI summary
+2026-03-22 12:06:29  [INFO]  Summary metrics:
+2026-03-22 12:06:29  [INFO]     total_employees                    : 2600
+2026-03-22 12:06:29  [INFO]     avg_performance_rating             : 2.989
+2026-03-22 12:06:29  [INFO]     pct_high_performers                : 17.9
+2026-03-22 12:06:29  [INFO]     pct_low_performers                 : 18.8
+2026-03-22 12:06:29  [INFO]     avg_okr_completion                 : 70.67
+2026-03-22 12:06:29  [INFO]     avg_engagement_score               : 53.97
+2026-03-22 12:06:29  [INFO]     predicted_high_performers          : 542
+2026-03-22 12:06:29  [INFO]     flight_risk_count                  : 21
+2026-03-22 12:06:29  [INFO]     pip_risk_count                     : 920
+2026-03-22 12:06:29  [INFO]     promotion_ready_count              : 367
+2026-03-22 12:06:29  [INFO]     promotion_lag_count                : 142
+2026-03-22 12:06:29  [INFO]  Main CSV saved: C:\Users\ganti_kvd0xe3\OneDrive\Sathya\employee_performance_analytics\data\processed\employee_with_predictions.csv
+2026-03-22 12:06:29  [INFO]  Archive saved: C:\Users\ganti_kvd0xe3\OneDrive\Sathya\employee_performance_analytics\data\processed\predictions_2024-10.csv
+2026-03-22 12:06:29  [INFO]  Summary JSON saved: C:\Users\ganti_kvd0xe3\OneDrive\Sathya\employee_performance_analytics\data\processed\summary_2024-10.json
+2026-03-22 12:06:29  [INFO]  Generating monthly visual report
+2026-03-22 12:06:30  [INFO]  Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-22 12:06:30  [INFO]  Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-22 12:06:36  [INFO]  Report saved: C:\Users\ganti_kvd0xe3\OneDrive\Sathya\employee_performance_analytics\docs\monthly_report_2024-10.png
+2026-03-22 12:06:36  [INFO]  
+2026-03-22 12:06:36  [INFO]  ====================================================
+2026-03-22 12:06:36  [INFO]  MOCK EMAIL NOTIFICATION (demo mode)
+2026-03-22 12:06:36  [INFO]  Subject: [People Analytics] Monthly Report Ready - 2024-10
+2026-03-22 12:06:36  [INFO]  
+----------------------------------------------------
+PEOPLE ANALYTICS - MONTHLY AUTOMATED REPORT
+----------------------------------------------------
+
+Hi HR Leadership Team,
+
+Your monthly performance analytics report
+for 2024-10 is ready.
+
+KEY HIGHLIGHTS:
+----------------------------------------------------
+  Employees Analyzed        : 2,600
+  Avg Performance Rating    : 2.99 / 5.0
+  High Performers (>=4.0)   : 17.9%
+  Avg OKR Completion        : 70.7%
+  Avg Engagement Score      : 54.0 / 100
+  Predicted High Performers : 542
+  Promotion Ready           : 367
+
+ACTIONS REQUIRED THIS CYCLE:
+----------------------------------------------------
+  Flight Risk Employees     : 21
+  -> Stay interviews within 2 weeks
+
+  PIP Risk Employees        : 920
+  -> PIP conversations within 30 days
+
+  Promotion Lag Alerts      : 142
+  -> Career conversations within 30 days
+
+REPORT ASSETS:
+----------------------------------------------------
+  Report  : C:\Users\ganti_kvd0xe3\OneDrive\Sathya\employee_performance_analytics\docs\monthly_report_2024-10.png
+  Archive : data/processed/predictions_2024-10.csv
+  Summary : data/processed/summary_2024-10.json
+
+DISCLAIMER: All scores are model-assisted.
+Final decisions require human review.
+
+----------------------------------------------------
+People Analytics Automation System
+Generated: 2026-03-22 12:06:36
+----------------------------------------------------
+
+2026-03-22 12:06:36  [INFO]  ====================================================
+2026-03-22 12:06:36  [INFO]  
+2026-03-22 12:06:36  [INFO]  POWER BI REFRESH:
+2026-03-22 12:06:36  [INFO]    CSV updated at: data/processed/employee_with_predictions.csv
+2026-03-22 12:06:36  [INFO]    To refresh Power BI:
+2026-03-22 12:06:36  [INFO]    1. Open Power BI Desktop
+2026-03-22 12:06:36  [INFO]    2. Home tab -> Refresh
+2026-03-22 12:06:36  [INFO]    OR configure scheduled refresh
+2026-03-22 12:06:36  [INFO]    in Power BI Service (Settings -> Schedule)
+2026-03-22 12:06:36  [INFO]  
+2026-03-22 12:06:36  [INFO]  ====================================================
+2026-03-22 12:06:36  [INFO]  AUTOMATION COMPLETE
+2026-03-22 12:06:36  [INFO]    Month    : 2024-10
+2026-03-22 12:06:36  [INFO]    Duration : 8 seconds
+2026-03-22 12:06:36  [INFO]    HP Count : 542
+2026-03-22 12:06:36  [INFO]    Manual hours saved: ~10 hours
+2026-03-22 12:06:36  [INFO]  ====================================================
